@@ -125,7 +125,7 @@ services:
       - PGID=1000
       - TZ=${TZ}
     volumes:
-      - ${DIR}/books/openbooks-downloads:/books
+      - ${DIR}/files/openbooks-downloads:/books
     ports:
       - 8087:80
     restart: unless-stopped
