@@ -148,19 +148,7 @@ services:
       - "com.centurylinklabs.watchtower.enable=true"
     networks:
       - library-net
-  
-  homepage:
-    image: ghcr.io/benphelps/homepage:latest
-    container_name: homepage
-    ports:
-      - 3000:3000
-    environment:
-      - TZ=${TZ}
-    volumes:
-      - ${DIR}/services/mangment/homepage/config:/app/config
-      - /var/run/docker.sock:/var/run/docker.sock
-
-
+      
 
 networks:
   library-net:
