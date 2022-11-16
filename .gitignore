@@ -1,3 +1,4 @@
 # ignore ALL files in created directories
 files/
 services/
+basic/
