@@ -157,7 +157,7 @@ services:
     environment:
       - TZ=${TZ}
     volumes:
-      - ${DIR}/services/mangment/homepage/config:/app/config
+      - ${DIR}/services/managment/homepage/config:/app/config
       - /var/run/docker.sock:/var/run/docker.sock
 
 
