@@ -5,37 +5,37 @@
   - calibre:
     href: http://localhost:8080
     description:
-    server: library-docker
+    server: my-docker
     container: calibre
   - calibre-web:
     href: http://localhost:8082
     description:
-    server: library-docker
+    server: my-docker
     container: calibre-web
   - COPS:
     href: http://localhost:8083
     description:
-    server: library-docker
+    server: my-docker
     container: cops
   - readarr:
     href: http://localhost:8084
     description:
-    server: library-docker
+    server: my-docker
     container: readarr
   - lazylibrarian:
     href: http://localhost:8085
     description:
-    server: library-docker
+    server: my-docker
     container: lazylibrarian
   - audiobookshelf:
     href: http://localhost:8086
     description:
-    server: library-docker
+    server: my-docker
     container: audiobookshelf
   - openbooks:
     href: http://localhost:8086
     description:
-    server: library-docker
+    server: my-docker
     container: openbooks
   
 
