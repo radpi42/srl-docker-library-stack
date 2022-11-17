@@ -1,0 +1,42 @@
+# For configuration options and examples, please see:
+# https://github.com/benphelps/homepage/wiki/Services
+
+- Library Links:
+  - calibre:
+    href: http://localhost:8080
+    description:
+    server: library-docker
+    container: calibre
+  - calibre-web:
+    href: http://localhost:8082
+    description:
+    server: library-docker
+    container: calibre-web
+  - COPS:
+    href: http://localhost:8083
+    description:
+    server: library-docker
+    container: cops
+  - readarr:
+    href: http://localhost:8084
+    description:
+    server: library-docker
+    container: readarr
+  - lazylibrarian:
+    href: http://localhost:8085
+    description:
+    server: library-docker
+    container: lazylibrarian
+  - audiobookshelf:
+    href: http://localhost:8086
+    description:
+    server: library-docker
+    container: audiobookshelf
+  - openbooks:
+    href: http://localhost:8086
+    description:
+    server: library-docker
+    container: openbooks
+  
+
+
