@@ -4,4 +4,4 @@ docker network create library-net
 
 docker compose pull
 
-docker compose up -d 
+docker compose -f docker-compose-plus.yml up -d 
