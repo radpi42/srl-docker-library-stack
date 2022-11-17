@@ -100,6 +100,7 @@ services:
 
   audiobookshelf:
     image: ghcr.io/advplyr/audiobookshelf:latest
+    container_name: audiobookshelf
     environment:
       - AUDIOBOOKSHELF_UID=99
       - AUDIOBOOKSHELF_GID=100
@@ -125,7 +126,7 @@ services:
       - PGID=1000
       - TZ=${TZ}
     volumes:
-      - ${DIR}/books/openbooks-downloads:/books
+      - ${DIR}/files/openbooks-downloads:/books
     ports:
       - 8087:80
     restart: unless-stopped
@@ -157,10 +158,28 @@ services:
     environment:
       - TZ=${TZ}
     volumes:
-      - ${DIR}/services/mangment/homepage/config:/app/config
+      - ${DIR}/etc/homepage/config:/app/config
       - /var/run/docker.sock:/var/run/docker.sock
-
-
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    networks:
+      - library-net
+  
+  dockerproxy:
+    image: ghcr.io/tecnativa/docker-socket-proxy:latest
+    container_name: dockerproxy
+    environment:
+        - CONTAINERS=1 # Allow access to viewing containers
+        - POST=0 # Disallow any POST operations (effectively read-only)
+    ports:
+        - 2375:2375
+    volumes:
+        - /var/run/docker.sock:/var/run/docker.sock:ro # Mounted as read-only
+    restart: unless-stopped
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    networks:
+      - library-net
 
 networks:
   library-net:
