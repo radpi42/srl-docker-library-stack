@@ -160,8 +160,10 @@ services:
     volumes:
       - ${DIR}/etc/homepage/config:/app/config
       - /var/run/docker.sock:/var/run/docker.sock
-
-
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    networks:
+      - library-net
 
 networks:
   library-net:
