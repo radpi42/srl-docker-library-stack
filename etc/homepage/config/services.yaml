@@ -3,40 +3,40 @@
 
 - Library Links:
   - calibre:
-    href: http://127.0.0.1:8080/
-    description:
-    server: my-docker
-    container: calibre
+      href: http://127.0.0.1:8080/
+      description:
+      server: my-docker
+      container: calibre
   - calibre-web:
-    href: http://127.0.0.1:8082/
-    description:
-    server: my-docker
-    container: calibre-web
+      href: http://127.0.0.1:8082/
+      description:
+      server: my-docker
+      container: calibre-web
   - COPS:
-    href: http://127.0.0.1:8083/
-    description:
-    server: my-docker
-    container: cops
+      href: http://127.0.0.1:8083/
+      description:
+      server: my-docker
+      container: cops
   - readarr:
-    href: http://127.0.0.1:8084/
-    description:
-    server: my-docker
-    container: readarr
+      href: http://127.0.0.1:8084/
+      description:
+      server: my-docker
+      container: readarr
   - lazylibrarian:
-    href: http://127.0.0.1:8085/
-    description:
-    server: my-docker
-    container: lazylibrarian
+      href: http://127.0.0.1:8085/
+      description:
+      server: my-docker
+      container: lazylibrarian
   - audiobookshelf:
-    href: http://127.0.0.1:8086/
-    description:
-    server: my-docker
-    container: audiobookshelf
+      href: http://127.0.0.1:8086/
+      description:
+      server: my-docker
+      container: audiobookshelf
   - openbooks:
-    href: http://127.0.0.1:8086/
-    description:
-    server: my-docker
-    container: openbooks
+      href: http://127.0.0.1:8086/
+      description:
+      server: my-docker
+      container: openbooks
   
 
 
